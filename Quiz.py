@@ -57,8 +57,8 @@ def play_again():
     if again in ["yes", "y"]:
         new_game()
     else:
-        print("Okay, the game will close in 3 seconds")
-        time.wait(3)
+        print("Okay, the game will close in 3 seconds.")
+        time.sleep(3)
     # ------------------------------
 
 questions = {
