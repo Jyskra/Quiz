@@ -1,3 +1,4 @@
+import time
 # ------------------------------
 def new_game():
     
@@ -55,6 +56,9 @@ def play_again():
     again = input("Would you want to play again? (yes/no): ").lower()
     if again in ["yes", "y"]:
         new_game()
+    else:
+        print("Okay, the game will close in 3 seconds")
+        time.wait(3)
     # ------------------------------
 
 questions = {
